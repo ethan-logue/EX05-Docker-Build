@@ -1,0 +1,59 @@
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem !important;
+}
+
+.person-main-info {
+    display: flex;
+    gap: 1rem;
+}
+
+.person-main-info img {
+    aspect-ratio: 1;
+    width: 160px;
+    object-fit: cover;
+}
+
+.person-details > h1, h3 {
+    font-weight: revert;
+}
+
+.person-details > h1 {
+    font-size: 1.85rem;
+    line-height: 1;
+}
+
+.person-details > h3 {
+    font-size: 1.15rem;
+}
+
+.contact-details-container {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.contact-details {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: var(--chakra-colors-main-hoverOrange);
+    font-weight: bold;
+}
+
+.contact-details a {
+    transition: color 0.2s ease-in;
+}
+
+.contact-details a:hover {
+    color: var(--chakra-colors-main-black);
+}
+
+.interests {
+    width: fit-content;
+}
+
+.interests:hover {
+    cursor: default;
+}

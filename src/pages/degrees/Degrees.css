@@ -1,0 +1,99 @@
+.degrees {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.degree-menu {
+    margin-left: 1rem;
+}
+
+.degree-menu h2 {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.degree-item {
+    font-weight: bold;
+    padding: 1rem 0.5rem !important;
+}
+
+.degree-item svg {
+    color: var(--chakra-colors-main-orange);
+}
+
+.degree-desc {
+    margin-left: 1.5rem;
+}
+
+.degree-desc > p {
+    margin: 1rem auto 0.5rem;
+}
+
+.degree-listing {
+    margin: 0.5rem 0 0 2rem;
+    list-style: none;
+}
+
+.degree-listing li::marker {
+    content: '\2013';
+}
+
+.degree-listing li {
+    padding: 0 0.5rem;
+}
+
+.minor-listing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.minor-course {
+    color: var(--chakra-colors-main-hoverOrange);
+    font-weight: bold;
+    transition: all 0.2s ease-in;
+}
+
+.minor-course + .minor-course {
+    border-left: solid 1px black;
+    padding-left: 0.5rem;
+}
+
+.minor-course:hover {
+    color: var(--chakra-colors-main-black);
+    cursor: pointer;
+}
+
+.minor-note {
+    color: var(--chakra-colors-main-gray-400);
+    font-size: 0.8rem;
+    position: relative;
+    margin-left: 0.6rem !important;
+}
+
+.minor-note::before {
+    content: '*';
+    left: -10px;
+    position: absolute;
+}
+
+.course-title {
+    padding-bottom: 0.5rem !important;
+}
+
+.course-desc {
+    padding-bottom: 1rem !important;
+}
+
+.course-loading {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin: 0.5rem 0 0;
+    padding: 0.5rem 1rem;
+    opacity: 0.75;
+    background-color: var(--chakra-colors-main-orange);
+    color: var(--chakra-colors-main-white);
+}

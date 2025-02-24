@@ -1,0 +1,92 @@
+.heading {
+	text-align: center;
+	top: 0px;
+	margin: 0px;
+	background-color: var(--chakra-colors-main-black);
+	color: var(--chakra-colors-main-white);
+	padding: 0px;
+	font-weight: bold;
+	z-index: 9999;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem 1.875rem 1rem;
+}
+
+.subtitle {
+	font-size: 1.125rem;
+	margin-bottom: 0;
+}
+
+.title {
+	font-size: 2.25rem;
+	line-height: 2.25rem;
+}
+
+.quick-links {
+	display: flex;
+	font-size: 0.9rem;
+	gap: 0.9375rem;
+}
+
+.quick-links a {
+	transition: color .2s ease-in;
+}
+
+.quick-links a:hover {
+	color: var(--chakra-colors-main-orange);
+}
+
+.hero {
+	position: relative;
+	overflow: hidden;
+}
+
+.hero-overlay {
+	position: absolute;
+	background-image: linear-gradient(to right,rgba(0,0,0,0.6),transparent 70%);
+	height: 100%;
+	width: 100%;
+}
+
+.hero-image {
+	width: 100%;
+	object-fit: cover;
+}
+
+.hero-banner {
+    position: absolute;
+    opacity: 0.85;
+	width: 26%;
+    left: -8%;
+    bottom: -48%;
+}
+
+.hero-title  {
+	position: absolute;
+	color: var(--chakra-colors-main-white);
+	bottom: 45%;
+    left: 12%;
+	font-size: 2.25rem;
+	font-weight: bold;
+}
+
+@media (max-width: 876px) {
+	.heading {
+		justify-content: center;
+	}
+
+	.heading > a {
+		display: none;
+	}
+
+	.title {
+		text-align: center;
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+	}
+
+	.quick-links {
+		display: none;
+	}
+}

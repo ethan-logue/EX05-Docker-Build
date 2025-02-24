@@ -1,0 +1,87 @@
+.table-container {
+    overflow-x: hidden;
+}
+
+.table-header > * {
+	font-family: revert !important;
+	text-transform: none !important;
+	font-size: 0.8rem !important;
+	color: revert !important;
+}
+
+.table-row > * {
+	border-color: var(--chakra-colors-main-gray-200) !important;
+}
+
+.table-row > *:first-child {
+	width: 100%;
+}
+
+.table-footer {
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+	margin-top: 1rem;
+}
+
+.shown-dropdown {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.shown-dropdown > *:first-child {
+	width: fit-content;
+	border-color: var(--chakra-colors-main-gray-200);
+	transition: all 0.1s ease-in;
+}
+
+.num-visible {
+	padding-right: 3rem !important;
+	cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+	gap: 0.35rem;
+}
+  
+.pagination li {
+    border: 1px solid var(--chakra-colors-main-gray-200);
+    border-radius: 0.25rem;
+	transition: all 0.1s ease-in;
+}
+
+.pagination a {
+	display: inline-block;
+	padding: 0.5rem 0.75rem;
+}
+
+.pagination li:hover, .shown-dropdown > *:first-child:hover {
+	filter: brightness(0.8);
+}
+
+.pagination li.selected:hover{
+	filter: brightness(1.1);
+}
+
+.pagination .selected {
+    background-color: var(--chakra-colors-main-orange);
+    color: var(--chakra-colors-main-white);
+    border-color: var(--chakra-colors-main-orange);
+}
+
+.pagination .disabled {
+	display: none;
+}
+
+@media (max-width: 700px) {
+    .table-footer {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        gap: 1rem;
+    }
+}

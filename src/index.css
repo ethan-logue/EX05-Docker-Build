@@ -1,0 +1,16 @@
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	color: var(--colors-font);
+}
+
+h2 {
+	font-size: 2.25rem;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}

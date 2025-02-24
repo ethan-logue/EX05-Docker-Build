@@ -1,0 +1,60 @@
+.people > p {
+    margin-bottom: 1rem;
+}
+
+.people-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.person {
+    flex: 1 1 200px;
+    max-width: 200px;
+    position: relative;
+}
+
+.person::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.person:hover {
+    cursor: pointer;
+}
+
+.person:hover::before {
+    box-shadow: inset 0px -250px 0px 0px var(--chakra-colors-main-orange);
+    filter: opacity(0.6);
+}
+
+.person img {
+    width: 100%;
+    aspect-ratio: 1 / 1.25;
+    object-fit: cover;
+}
+
+.person-name {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    color: transparent;
+    font-weight: bold;
+    font-size: 1.5rem;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+}
+
+.person-name p {
+    width: fit-content;
+    line-height: normal;
+}
+
+.person:hover .person-name {
+    color: var(--chakra-colors-main-white);
+}

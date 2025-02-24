@@ -1,0 +1,37 @@
+body {
+	font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif !important;
+}
+
+.app {
+	margin: 2rem auto;
+	width: 80%;
+	display: flex;
+	gap: 4rem;
+	position: relative;
+	align-items: flex-start;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	gap: 3rem;
+}
+
+@media (max-width: 1024px) {
+	.app {
+		width: 90%;
+		gap: 2rem;
+	}
+}
+
+@media (max-width: 876px) {
+	.app {
+		flex-direction: column;
+		width: 90%;
+	}
+
+	.content {
+		width: 100%;
+	}
+}

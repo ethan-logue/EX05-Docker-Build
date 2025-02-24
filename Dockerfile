@@ -1,4 +1,4 @@
-FROM node:18 AS builder
+FROM node:20 AS builder
 
 # Set the working directory
 WORKDIR /app
@@ -11,12 +11,13 @@ RUN npm install
 
 # Copy the source code
 COPY src ./src
+COPY index.html ./
 
 # Build the application
 RUN npm run build
 
 # Production image
-FROM node:18 AS production
+FROM node:20 AS production
 
 # Set the working directory
 WORKDIR /app
